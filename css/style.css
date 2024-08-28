@@ -1,0 +1,999 @@
+/*font---------------------------------------------------------*/
+body{ 
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /*navbar----------------------------------------------------*/
+.navbar {
+    margin-top:20px;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    font-size: 18px !important;
+    letter-spacing: 4px; 
+}
+.navbar-left{
+    font-weight: bold;
+}
+.navbar-left li{
+    margin: -5px;
+    letter-spacing: 1px;
+}
+.navbar-left img{
+    display: none;
+}
+.navbar-right{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.navbar-fixed-top{
+    position: absolute;
+}
+.navbar-header{
+    width: 100%; 
+    height: 2px;
+    display: flex; 
+    justify-content: center;
+}
+.navbar .navbar-brand{
+    width:110px; 
+    padding-top:0px; 
+} 
+.navbar, .navbar li a {
+    color: #fff !important;
+}
+.navbar-toggle {
+    border-color: transparent !important ;
+}
+.open .dropdown-toggle {
+    background-color: transparent !important;
+}
+.dropdown-menu{
+    min-width:70px; 
+    border-radius: 5px;
+    padding:3px;
+}
+.dropdown-menu li a {
+    color: #474744 !important; 
+    padding:20px;
+}
+.dropdown-menu li a:hover {
+    color: white !important; 
+    background-color: black; 
+}
+#language, #searching{
+    display:none;
+}
+
+/* carousel ------------------------------------------------------*/
+#myCarousel .carousel-inner .item img:nth-child(1) {display: block;}
+#myCarousel .carousel-inner .item img:nth-child(2) {display: none;}
+
+.carousel-inner img{
+    position: relative;
+}
+.carousel-caption {
+    position:absolute; 
+    left:60px; 
+    bottom:10%;
+    text-align: left;
+    font-size: 20px; 
+}
+.carousel-caption h3{
+    font-size: 50px;
+    font-weight: 500;
+    animation-delay: 0.6s;
+}
+.carousel-caption p{
+    animation-delay: 0.1s;
+}
+.carousel-caption a{
+    margin-right: 5px;
+    border-radius: 0;
+}
+.carousel-caption .btn-box{
+    position: absolute; 
+    text-align: left;
+    font-size: 15px;
+    animation-duration: 3s;
+    border-radius: 0;
+}
+
+/*button----------------------------------------*/
+
+.btn-black{
+    background: linear-gradient(90deg, black, black);
+    color: white;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    margin: 5px;
+    transition: background 2s ease-in;
+} 
+.btn-black:hover{
+    background: linear-gradient(90deg, black 0, rgb(158, 156, 156) 100%);
+    color: white;
+    background-size: 200% 100%;
+    animation: bg-move 0.8s forwards;
+    }
+
+    @keyframes bg-move {from {background-position: right;} to {background-position: left;}}
+
+.btn-default{
+    background: linear-gradient(90deg, white, white);
+    color: black;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    margin: 5px;
+    transition: 2s ease-in;
+} 
+.btn-default:hover{
+    background: linear-gradient(90deg, white 0, rgb(56, 54, 54) 100%);
+    color: black;
+    background-size: 200% 100%;
+    background-position: left;
+    animation: bg-move 0.8s forwards;
+    }
+
+@keyframes bg-move {from {background-position: right;} to {background-position: left;}}
+
+/* .btn-black{
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    background: linear-gradient (to left);
+    color: white;
+    background-size: 200% 100%;
+    background-position: 0 0;
+    margin: 5px;
+    transition: background-position 1s ease-in-out, background-color 0.5s ease-in-out;
+}
+.btn-black:hover{
+    background-position: 100% 0;
+    background-color: rgba(40, 40, 43, 0.6);
+    color: white;
+} */
+
+
+
+/* bestKia -----------------------------------------*/
+#bestKia h3{
+    font-size: 50px; 
+    font-weight: 600;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+#bestKia h4{
+    font-weight: 600; 
+    text-align:left;
+}
+#bestKia h4 > .badge{
+    float: right;
+    background-color: #05141F;
+    font-size: 10px;
+    padding: 7px 12px;
+}
+#bestKia .box > div:nth-of-type(1){
+    text-align: left; 
+    height:20px;
+}
+#bestKia .box{
+    border:1px solid #697278;
+    border-radius: 10px;
+    padding: 20px;
+}
+#bestKia .nav-tabs{
+    margin-bottom: 40px;
+    display:flex; 
+    justify-content: center;
+}
+/*#bestKia{
+    /width: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
+#bestKia .nav-tabs li{
+    margin:0 15px 0;
+}
+#bestKia .nav-tabs a{
+    font-size: 19px; 
+    font-weight:600; 
+    color:#697278;
+}
+#bestKia .nav-tabs li.active a{
+    border-radius: 0;
+    border:none;
+    border-bottom:1.8px solid black;
+    color: black;
+}
+#bestKia .box .col-sm-8, #bestKia .box .price{
+    text-align: right;
+}
+#bestKia .box .col-sm-8, #bestKia .box .money{
+    font-size: 10px;
+}
+#bestKia .btn{
+    width:130px;
+}
+#bestKia .box .btn{
+    border-radius: 0;
+}
+#bestKia .btn-box{
+    text-align: center;
+}
+#bestKia .sort{
+    text-align: center;
+    padding:30px;
+    margin-bottom:40px;
+    margin-top: 30px;
+}
+#bestKia .box > div{
+    padding:5px;
+}
+#bestKia .box img{
+    width:100%; 
+    height: 180px;
+    margin-bottom:20px;
+    margin-top:50px;
+    object-fit: contain;
+}
+#bestKia .box .col-sm-4{
+    font-weight:600; 
+    font-size:13px;
+}
+#bestKia .box .col-sm-8{
+    font-size:13px;
+}
+#bestKia .box .price{
+    font-size: 19px; 
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#menu3 .col-sm-8 img{
+    width: 20px; 
+    height: 20px;
+    padding: 0;
+    margin: 0; 
+    font-style: transparent;
+    cursor: pointer;
+}
+/* Etc--------------------------------------------------------------- */
+#etc{
+    margin-bottom: 60px;
+    width: 100%;
+}
+#etc .box{
+    background: #f8f8f8;
+    height:250px;
+    padding: 20px;
+    transition: 0.5s;
+}
+#etc .box img{
+    width:30px;
+}
+#etc .box h3{
+    font-size:17px; 
+    font-weight: bold;
+}
+#etc .box div{
+    position: absolute;
+    width: 100px;
+    bottom: 10px; 
+    right: 20px;
+    text-align: right;
+}
+#etc .box:hover{
+    background: #13212B; color:white;
+}
+#etc .box img:nth-child(1){
+    display:inline;
+}
+#etc .box img:nth-child(2){
+    display:none;
+}
+#etc .box:hover img:nth-child(1){
+    display:none;
+}
+#etc .box:hover img:nth-child(2){
+    display:inline;
+}
+#etc .box .bef{
+    display:inline;
+}
+#etc .box:hover .bef{
+    display:none;
+}
+#etc .box .aft{
+    display:none;
+}
+#etc .box:hover .aft{
+    display:inline;
+    font-size: 17px;
+}
+
+
+/* news -------------------------------------------------------------- */
+#news {
+    width: 100%;
+    height: auto;
+}
+
+#news1 {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#news .col-sm-6 {
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#news .col-sm-6 img:nth-child(1) {
+    display: block;
+    width: 100%;
+    height: auto; /* 이미지의 고정 높이를 제거하여 반응형으로 처리 */
+    object-fit: cover; /* 이미지 비율을 유지하며 박스를 채우도록 함 */
+}
+
+#news .col-sm-6:nth-child(2) {
+    background: #697278;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 텍스트 중앙 정렬 */
+}
+
+#news .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 텍스트 중앙 정렬 */
+}
+
+#news h3 {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#news h5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#news h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+#news .col-sm-6:nth-child(2) .btn {
+    font-size: 17px;
+    margin-top: 20px;
+    width: 150px;
+    height: 55px;
+    line-height: 40px;
+}
+
+#news p {
+    font-size: 15px;
+    font-weight: bold !important;
+    line-height: 35px;
+    padding-right: 50px;
+}
+
+/* 하단 뉴스 박스 관련 CSS */
+#news2 .newsbox {
+    padding: 20px;
+    height: 170px;
+}
+
+#news .col-sm-4 {
+    padding-bottom: 150px;
+    padding-right: 40px;
+}
+
+#news .col-sm-4 h4 {
+    font-size: 18px;
+    color: #697278;
+}
+
+#news .col-sm-4 p {
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 27px;
+}
+
+#news2 .animate {
+    transform: translateY(50%);
+    transition: transform 0.7s;
+}
+
+#news2 .animate.in-viewport {
+    transform: translateY(0%);
+}
+
+/* footer1 ------------------------------------------------------------------*/
+#footer1{
+    background: #05141f; 
+    color:white; 
+    padding-left: 35px; 
+    padding-right: 35px;
+    height: 430px;
+}
+#footer2{
+    background: #010E18; 
+    color:#79838B; 
+    padding-left: 35px !important;
+    height: 260px !important;
+}
+#footer1 .col-sm-12 img{
+    margin-top: 30px;
+}
+#footer1 ul, #footer2 ul{
+    list-style: none; 
+    padding:0;
+}
+#footer1 .col-sm-3:nth-child(1){
+    margin-top: 30px;
+    font-size:16px; 
+    font-weight: bold !important;
+    line-height: 50px; 
+}
+#footer1 .col-sm-3:nth-child(1) li:last-child{
+    padding-top: 0px;
+}
+#footer1 .col-sm-3:nth-child(2){
+    margin-top: 50px;
+    color:#79838B; 
+    font-size: 14px; 
+    line-height: 28px;
+    padding-left: 170px;
+}
+#footer1 .col-sm-6{
+    margin-top: 45px;
+}
+#footer1 .col-sm-6 ul{
+    position: absolute; 
+    right:0px;
+}
+#footer1 .col-sm-6 li{
+    display:inline;
+    margin-right: 23px;
+}
+#footer1 .col-sm-6 li a{
+    display:inline-block;
+    padding:5px;
+}
+#footer1 .col-sm-6 .btn{
+    border: none !important;
+}
+#footer1 .col-sm-6 > div{
+    margin-left: 10px !important;
+    position: absolute; 
+    right: 0; 
+    top: 160px;
+}
+#footer1 .col-sm-6 div div{
+    display: inline-block; 
+    padding-left: 10px;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+#footer1 .col-sm-6 .btn{
+    width:250px; 
+    background: #010E18; 
+    color:white;
+    text-align: left;
+}
+#footer1 .col-sm-6 .caret{
+    margin-left: 150px;
+}
+#footer1 .col-sm-6 .dropdown-menu {
+    position: absolute;
+    max-width: 255px;
+    margin-left: 7px;
+    height:280px;
+    overflow: auto;
+    border: 0.5px solid #37434B;
+    background: #010E18;
+  }
+#footer1 .col-sm-6 .dropdown-menu a{
+    color: white !important;
+    padding: 12px 20px;
+    display: block;
+    line-height: 16px;
+  }
+#footer1 .col-sm-3:nth-child(1) a{ 
+    color: white !important;
+    cursor: pointer;
+}
+/*footer2----------------------------------------------------------*/
+#collapse{
+    display: none;
+}
+#footer2 .col-sm-9{
+    float: right;
+    text-align: right;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+#footer2 .col-sm-3{
+    float: right;
+    text-align:left;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+#footer2 .col-sm-9 li{
+    display:inline;
+    padding-right: 17px;
+}
+#footer2 .col-sm-9 li a{
+    display:inline-block; 
+    padding-right: 20px !important;
+    color:#79838B;
+}
+#footer2 .award{
+    display: inline-block;
+    padding:0; 
+    width:270px; 
+    margin-top: 5px;
+}
+#footer2 .award img{
+    display: inline-block;
+    position: relative; 
+    width:12%; 
+    bottom:40px;
+}
+#footer2 .award ul{
+    display: inline-block;
+    width:80%; 
+    margin-left:2%;
+    font-size: 12px;
+    line-height: 17px; 
+}
+#footer2 .award li{
+    padding-bottom: 5px;
+}
+#footer2 .col-sm-9 li:nth-child(1),
+#footer2 .col-sm-9 li:nth-child(4){display: none;}
+
+
+@media screen and (max-width:767px){
+
+/*navigation-----------------------------------------*/
+    .navbar #myNavbarR{
+        display: none;
+    }
+    .navbar-header{
+        display: inline;
+        width: 100%;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: white;
+    }
+    .navbar .nav a{
+        background-color: rgba(255, 255, 255, 0.1) !important; 
+        color: black !important;
+    }
+    #myNavbar{
+        border:none;
+        background-color: transparent !important;
+        box-shadow: none;
+    }
+    #myNavbar .navbar-left li{
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+
+    }
+    .navbar-left img {
+        display: inline;
+    }
+    #searching, #language{
+        display:block;
+        position: absolute;
+    }
+    #searching{
+        margin-top:10px; 
+        right:95px;
+        background-color: transparent;
+    }
+    #language{
+        top:35px; 
+        right:125px; 
+        width:70px; 
+        text-align: center;
+        background-color: transparent;
+    } 
+    .dropdown-menu { 
+        margin-top: 15px;
+    }
+
+/*Carousel--------------------------------------------------*/    
+    #myCarousel .carousel-inner .item img:nth-child(1) {display: none;}
+    #myCarousel .carousel-inner .item img:nth-child(2) {display: block;}
+    .carousel-caption{
+        position:absolute; 
+        left:30px; 
+        bottom:150px;
+    }
+
+/*BestKia--------------------------------------------------*/
+    #bestKia{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #bestKia h3{
+        font-size: 32px; 
+        font-weight: 600;
+        margin-top: 80px;
+    }
+    #bestKia h4{
+        margin-top: 50px;
+        font-weight: 300; 
+        text-align:right !important;
+        font-size: 25px;
+    }
+    #bestKia .badge{
+        margin-right: 230px;
+        margin-left: 10px;
+    }
+    #bestKia .box > div:nth-of-type(1){
+        text-align: center; 
+        height:20px;
+        font-size: 18px;
+    }
+    #bestKia .box{
+        margin-top: 30px;
+        border:none;
+    }
+    #bestKia .nav-tabs {
+        margin-left: 0px;
+        text-align: left!important;
+        float:left!important;
+        margin-bottom: 20px;
+    }
+    #bestKia .nav-tabs li{
+        margin:0 5px 0;
+    }
+    #bestKia .box .col-sm-8{
+        font-size: 18px!important;
+    }
+    #bestKia .box .price{
+        font-size: 33px !important;
+        font-weight: 5 !important;
+    }
+    #bestKia .box .col-sm-8, #bestKia .box .money{
+        font-size: 15px;
+        font-weight: bold !important;
+    }
+    #bestKia .btn{
+        width: 250px!important;
+        height: 45px;
+        line-height: 30px;
+        font-size: 15px!important;
+    }
+    #bestKia .box .col-sm-4{
+        font-size:17px;
+        margin-top: 20px!important;
+        line-height: 15px!important;
+        float: left;
+    }
+    #bestKia .box .col-sm-8{
+        font-size:13px;
+        margin-top: 20px;
+        float: right;
+        font-weight: 1!important;
+        color: #697278;
+    }
+    #bestKia .col-sm-4:nth-child(1){display: block;}
+    #bestKia .col-sm-4:nth-child(2){display: none;}
+    #bestKia .col-sm-4:nth-child(3){display: none;}
+    
+   
+
+
+    /* #bestKia .btn-box{
+        font-size: 13px;
+        margin-left: 5px; 
+        margin-bottom: 5px;
+        width: 20px !important;
+        height: 10px;
+        line-height:25px ;
+    }
+    #bestKia .sort{
+        text-align: center;
+        padding:30px;
+        margin-bottom:40px;
+        margin-top: 30px;
+    }
+    #bestKia .box > div{
+        padding:5px;
+    }
+    #bestKia .box img{
+        width:100%; 
+        height: 180px;
+        margin-bottom:20px;
+        margin-top:50px;
+        object-fit: contain;
+    }
+    
+   
+    #bestKia .box .price{
+        font-size: 19px; 
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    #bestKia .btn{
+        width:100px;
+       
+    }
+    #menu3 .col-sm-8 .btn{
+        width: 20px; 
+        height: 15px; 
+        padding: 0; 
+        border: none !important; 
+        position: relative; 
+        bottom: 8px;
+    }
+    #menu3 .col-sm-8 img{
+        width: 100%; 
+        height: 100%; 
+        position: relative; 
+        bottom:45px;
+        
+    }
+    #menu3 .col-sm-8 img:hover{
+        pointer-events: none!important;
+        background-color:transparent !important;
+    }
+    #bestKia .col-sm-8 .modal-header{
+        text-align: center; 
+        margin-top: 20px; 
+        border:none;
+    }
+    #bestKia .col-sm-8 .modal-title{
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #bestKia .col-sm-8 .modal-body li{
+        text-align: left;  
+        margin-right:30px; 
+        margin-top:10px;
+        margin-bottom: 30px;
+    } */
+
+
+
+
+
+/*ETC-------------------------------------------------------------*/
+    #etc .box{
+        margin-top: 15px;
+        height: 150px;
+    }
+    #etc .box img{
+        width: 25px;
+    }
+    #etc .box h3{
+        font-size: 15px;
+        font-weight: 100;
+    }
+    #etc .box .aft{
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        letter-spacing: 2px;
+    }
+
+/*News-------------------------------------------------------------*/
+    #news{
+        margin-top: -50px;
+    }
+    #news .text-center{
+        font-size: 25px;
+        margin-bottom: -10px;
+    }
+    #news1 .col-sm-6 img:nth-child(1) {display: none;}
+    #news1 .col-sm-6 img:nth-child(2) {display:block;}
+    #news1 .col-sm-6 {
+        width:100%;
+    }
+    #news1 .col-sm-6:nth-child(1) {
+        height: auto;
+    }
+    #news1 .col-sm-6:nth-child(2) {
+        height: 220px;
+    }
+    #news1 .col-sm-6 .btn{
+        left: 20px;
+        bottom: 30px;
+        font-size: 12px;
+        width:100px ;
+    }
+    #news .col-sm-6:nth-child(2) .btn{
+        font-size: 13px;
+        margin-left: 5px; 
+        margin-bottom: 5px;
+        width: 120px;
+        height: 37px;
+        line-height:25px ;
+    }
+    #news1 .col-sm-6 .box{
+        margin-left: -25px !important;
+    }
+    #news1 .col-sm-6 h5{
+        font-size: 13px;
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+    #news1 .col-sm-6 h4{
+        font-size: 17px;
+        margin-left: 5px;
+    }
+    #news2 .col-sm-4 {
+        padding-left:0px;
+        padding: 0px;
+        margin-bottom: -10vh;
+        margin-top: -5vh;
+    }
+    #news2 {
+        margin-bottom: 120px;
+    }
+    #news2 h4{
+        font-size: 13px!important;
+        margin-bottom: 18px !important;
+    }
+    #news2 p{
+        font-size: 16px!important;
+        line-height: 5px!important;
+    }
+
+/*footer 1--------------------------------------------------------------*/
+   
+    #footer1 .col-sm-3:nth-child(2) {display:none;}
+    #footer1 .col-sm-6 {display:none;}  
+
+    #footer2, #footer2 .container{
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #05141F; 
+    }
+    #footer1 .col-sm-3:nth-child(1) a:hover{
+        color: white !important;
+        text-decoration: none;
+    }
+    #footer1 .col-sm-3:nth-child(1) .home{
+        margin-top: 60px !important;
+        cursor: pointer;
+    }
+    #footer1{
+        height: 530px;
+        padding-top: 30px;
+    }
+    #footer2{
+        height: 350px !important;
+    }
+    #footer2 .collapsible{
+        padding-top: 17px!important;
+        padding-bottom: 17px!important;
+        border-bottom: 0.5px solid #232C31!important;
+        border-top: 0.5px solid #232C31!important;
+        padding-right: 25px ;
+    }
+    #accordion,#accordion .panel,#accordion .panel-heading{
+        background-color: #010E18;              
+        border-radius: 0 !important;
+    }
+    #collapse {
+        display:block;
+    }
+    #collapse .collapsible {
+        background: #05141F; 
+        color:white;
+        cursor: pointer;
+        padding-left: 35px;
+        margin-bottom: px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+    }
+    #collapse .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    #collapse .active:after {
+        content: "\2212";
+    }
+    #collapse .active, #collapse .collapsible:hover {
+        background-color: #232C31;
+    }
+    #collapse .content1, #collapse .content2 {
+        padding-left:18px;
+        height: 300px;
+        max-height:0px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+        overflow: auto;
+    }
+    #collapse a{
+        color: #697278; 
+        font-size: 16px;
+        display:block; 
+        margin:10px;
+        height: 50px;
+        padding-top:15px ;
+        text-decoration: none;
+    }
+    #footer2 .col-sm-3{
+        width:100%; 
+        margin-top: -30px;
+        text-align: center;
+        font-size: 18px;
+    }
+    #footer2 .col-sm-9 ul{
+        width: 100%;
+        margin-top: 15px;
+        max-height: 100px !important;
+        text-align: center;
+        left: 5px !important;
+    }
+    #footer2 .col-sm-9 a{
+        text-decoration: none;
+    }
+    #footer2 .col-sm-9 ul{
+        display: grid;
+        grid-template-rows:repeat(2, 1fr);
+        gap: 3px;
+        padding: 0;
+    }
+    #footer2 .col-sm-9 {
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    #footer2 .col-sm-9 li:nth-child(1),
+    #footer2 .col-sm-9 li:nth-child(2),
+    #footer2 .col-sm-9 li:nth-child(3),
+    #footer2 .col-sm-9 li:nth-child(4){
+        grid-row: 1;     
+        padding-bottom: 28px;  
+    }
+
+    #footer2 .col-sm-9 li:nth-child(5),
+    #footer2 .col-sm-9 li:nth-child(6),
+    #footer2 .col-sm-9 li:nth-child(7),
+    #footer2 .col-sm-9 li:nth-child(8){
+        grid-row: 2;
+    }
+    #footer2 .col-sm-9 li:nth-child(1),
+    #footer2 .col-sm-9 li:nth-child(4){display: inline-block;}
+
+    #footer2 .col-sm-9 grid-row {
+        text-align: center;
+        display: flex;
+        justify-items: center !important;
+    }
+    #footer2 .award{display: none;}
+
+   
+   
+
+}
