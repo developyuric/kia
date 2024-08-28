@@ -317,108 +317,89 @@ body{
 
 
 /* news -------------------------------------------------------------- */
-#news {
+#news{
     width: 100%;
-    height: auto;
+    height:auto ;
 }
-
-#news1 {
+#news1{
     margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
 }
-
-#news .col-sm-6 {
-    flex: 1;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#news .col-sm-6 img:nth-child(1) {
-    display: block;
-    width: 100%;
-    height: auto; /* 이미지의 고정 높이를 제거하여 반응형으로 처리 */
-    object-fit: cover; /* 이미지 비율을 유지하며 박스를 채우도록 함 */
-}
-
-#news .col-sm-6:nth-child(2) {
-    background: #697278;
-    color: white;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 텍스트 중앙 정렬 */
-}
-
-#news .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 텍스트 중앙 정렬 */
-}
-
-#news h3 {
-    padding-top: 50px;
-    padding-bottom: 60px;
-    font-size: 50px;
+#news h3{
+    padding-top:50px;
+    padding-bottom:60px;
+    font-size: 50px; 
     font-weight: 700;
+} 
+#news .col-sm-6 img:nth-child(1){display:block;}
+#news .col-sm-6 img:nth-child(2){display:none;}
+#news .col-sm-6{
+    float:right; 
+    height: 634px; 
+    padding:0; 
 }
-
-#news h5 {
-    font-size: 25px;
+#news .col-sm-6:nth-child(2){
+    background: #697278; 
+    color:white;
+    padding:50px;
+}
+#news h5{
+    font-size: 25px; 
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 25px ;
+    margin-left: 30px;
     margin-bottom: 20px;
 }
-
-#news h4 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 25px;
+#news h4{
+    font-size: 30px; 
+    font-weight: 600; 
+    margin-top: 25px ;
+    margin-left: 30px;
 }
-
-#news .col-sm-6:nth-child(2) .btn {
+#news .col-sm-6:nth-child(2) .btn{
     font-size: 17px;
-    margin-top: 20px;
+    margin-left: 30px; 
+    margin-bottom: 20px;
     width: 150px;
     height: 55px;
-    line-height: 40px;
+    line-height:40px ;
 }
-
-#news p {
-    font-size: 15px;
+#news p{
+    font-size: 15px; 
     font-weight: bold !important;
-    line-height: 35px;
+    line-height: 35px; 
     padding-right: 50px;
 }
-
-/* 하단 뉴스 박스 관련 CSS */
-#news2 .newsbox {
+#news .btn-default{
+    position:absolute; 
+    font-weight: 600; 
+    bottom:60px;
+    border-radius: 0;
+    width: 120px;
+    height: 40px;
+    line-height: 25px;
+}
+#news2 .newsbox{
     padding: 20px;
     height: 170px;
 }
-
-#news .col-sm-4 {
+#news .col-sm-4{
     padding-bottom: 150px;
     padding-right: 40px;
 }
-
-#news .col-sm-4 h4 {
-    font-size: 18px;
+#news .col-sm-4 h4{
+    font-size: 18px; 
     color: #697278;
 }
-
-#news .col-sm-4 p {
+#news .col-sm-4 p{
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 800 ; 
     margin-left: 27px;
 }
-
-#news2 .animate {
-    transform: translateY(50%);
-    transition: transform 0.7s;
+#news2 .animate{
+    transform: translateY(50%) ;
+    transition: transform 0.7s ;
 }
-
-#news2 .animate.in-viewport {
+#news2 .animate.in-viewport{
     transform: translateY(0%);
 }
 
